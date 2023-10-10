@@ -43,6 +43,7 @@ y entre a la funcion seleccionada.
 Para poder entrar a la función seleccionada se hace una serie de comparaciones con unos Else If que comparan las variables xFuncion y yFuncion anteriormente 
 mencionados, si no cumplen con los valores esperados se vuelve a entrar a la funcion anteriormente mencionada para seleccionar por teclado.
 
+```cpp
             if(xFuncion == 0 && yFuncion == 0){
                 
             }else if(xFuncion == 1 && yFuncion ==0){
@@ -50,6 +51,7 @@ mencionados, si no cumplen con los valores esperados se vuelve a entrar a la fun
             }else if (xFuncion == 2 && yFuncion == 0){
 
             }
+```
 
 Para la primera funcion utilizamos la funcion anteriomente mencionada para solicitar valores por teclado solo que en esta dentro del If las 
 se le suma a una variable x1, y1, x2 y y2, para cada variable hacemos la funcion una vez, en esta funcion tenemos un counter que corresponder al exponente
@@ -57,6 +59,7 @@ del 10 para ir agregando decenas, centenas, etc; el problema es que como lo impl
 luego de ingresar todos los valores hacemos las operaciones correspondientes para poder imprimir en la consola lo que nos piden, la pendiente y el 
 intercepto con el eje y.
 
+```cpp
                 display.printf("Primer funcion");
                 double x1 =0,y1=0,x2=0,y2=0;
                 int counter =0;
@@ -174,12 +177,14 @@ intercepto con el eje y.
                     string inter = (string)interceptoY;
                     printf(inter);
                 }
+```
 
 Para la seunda funcion solicitamos un valor para N (la cantidad de temperaturas) mediante el mismo metodo anteriormente mencionado seguido a esto entramos 
 a un ciclo For para pedir las N temperaturas, que se piden mediante el mismo metodo pero se guardan en una misma varible temp; como nos piden el promedio y 
 la desviacion estadar antes de salir del cilco For se suma la variable obtenida a dos sumatorias una para el promedio y otra para la deviacion estandar, 
 luego de salir del ciclo se hacen los calculos y se imprimen por consola el promedio y la desviación estandar.
 
+```cpp
                 printf("Segunda funcion");
                 double n =0;
                 double temp =0;
@@ -250,6 +255,7 @@ luego de salir del ciclo se hacen los calculos y se imprimen por consola el prom
                 printf("La desviacion estandar es ");
                 string desvi = (string)desviacionStandar;
                 pritnf(desvi);
+```
 
 Para la tercera funcion se usa exactamente el mismo metodo que se uso en las anteriores funciones para pedir por teclado los datos, hacemos la funcion 
 tres veces una por cada color Rojo, Verde y Azul, luego de obtener los valores se divide entre 255 para obtener un valor entre cero y uno y el valor 
@@ -257,6 +263,7 @@ obtenido se le resta a uno, valor correspondiente a la frecuencia de los LEDS, l
 se pregunta al usuario si desea mostrar otro color, si pressiona el 1 del teclado puede meter otro color y si presiona el cero del teclado sale de la 
 función y puede seleccionar otra.
 
+```cpp
                 printf("Tercera funcion");
                 int validador = 1;
                 while (validador == 1) {
@@ -370,6 +377,7 @@ función y puede seleccionar otra.
                         }
                     }
                 }
+```
 
 Para poder ingresar a otra función sin tener que reiniciar el codigo, despues de cada función tenemos que reiniciar las variables xFuncion y yFuncion.
 
